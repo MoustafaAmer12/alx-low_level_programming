@@ -11,7 +11,7 @@ int main(void)
 	char alpha;
 
 	alpha = 'a';
-	while (alpha < 'z')
+	while (alpha <= 'z')
 	{
 		if (alpha != 'q' && alpha != 'e')
 		{
