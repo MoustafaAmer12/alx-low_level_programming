@@ -19,7 +19,10 @@ int main(void)
 			num3 = num1;
 			while (num3 < 10)
 			{
-				num4 = num2 + 1;
+				if (num3 > num1)
+					num4 = 0;
+				else
+					num4 = num2 + 1;
 				while (num4 < 10)
 				{
 					putchar(num1 + 48);
