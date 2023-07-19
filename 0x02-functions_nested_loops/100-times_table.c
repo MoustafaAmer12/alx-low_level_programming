@@ -8,16 +8,16 @@
  */
 void print_int(int i)
 {
-        if (i < 0)
-        {
-                _putchar('-');
-                i = -i;
-        }
-        if (i >= 10)
-        {
-                print_int(i / 10);
-        }
-        _putchar('0' + i % 10);
+	if (i < 0)
+	{
+		_putchar('-');
+		i = -i;
+	}
+	if (i >= 10)
+	{
+		print_int(i / 10);
+	}
+	_putchar('0' + i % 10);
 }
 /**
  * print_times_table - prints the times table of a given int in range 0 to 15
