@@ -24,7 +24,7 @@ void jack_bauer(void)
 			{
 				tmp = hrs / 10;
 				_putchar('0' + tmp);
-				_putchar('0' + tmp);
+				_putchar('0' + hrs % 10);
 			}
 			_putchar(':');
 			if (min < 10)
