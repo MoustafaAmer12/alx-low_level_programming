@@ -9,7 +9,7 @@ int main(void)
 {
 	int i;
 	double fib1, fib2, term;
-	
+
 	i = 2;
 	fib1 = 1;
 	fib2 = 2;
