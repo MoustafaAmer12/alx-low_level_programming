@@ -16,7 +16,7 @@ int main(void)
 	fib2 = 2;
 	sum = fib2;
 	term = fib1 + fib2;
-	while (term <= 4000000)
+	while (term <= max)
 	{
 		if (term % 2 == 0)
 			sum += term;
