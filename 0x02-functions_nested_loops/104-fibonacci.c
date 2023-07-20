@@ -8,7 +8,7 @@
 int main(void)
 {
 	int i;
-	unsigned long fib1, fib2, term;
+	unsigned long int fib1, fib2, term;
 
 	i = 2;
 	fib1 = 1;
