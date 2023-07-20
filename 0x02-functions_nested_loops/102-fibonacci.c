@@ -14,7 +14,7 @@ int main(void)
 	a = 1;
 	b = 2;
 	max = 50;
-	term = 0;
+	term = 2;
 	printf("%ld, ", a);
 	printf("%ld, ", b);
 	while (term < max)
