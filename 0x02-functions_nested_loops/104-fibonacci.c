@@ -8,19 +8,19 @@
 int main(void)
 {
 	int i;
-	double fib1, fib2, term;
+	long double fib1, fib2, term;
 
 	i = 2;
 	fib1 = 1;
 	fib2 = 2;
-	printf("%.0f, %.0f, ", fib1, fib2);
-	while (i < 100)
+	printf("%.0Lf, %.0Lf, ", fib1, fib2);
+	while (i < 98)
 	{
 		term = fib1 + fib2;
 		fib1 = fib2;
 		fib2 = term;
-		printf("%.0f", term);
-		if (i != 99)
+		printf("%.0Lf", term);
+		if (i != 97)
 			printf(", ");
 		i++;
 	}
