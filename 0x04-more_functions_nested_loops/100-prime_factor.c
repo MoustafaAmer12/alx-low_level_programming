@@ -6,9 +6,9 @@
  *
  * Return: 1 if prime and 0 otherwise
  */
-int prime(long n)
+int prime(unsigned long int n)
 {
-	long i;
+	unsigned long int i;
 
 	for (i = 3; i <= n / 2; i++)
 	{
@@ -25,9 +25,9 @@ int prime(long n)
  * Return: the largest factor
  */
 
-long largest_Pfactor(long n)
+unsigned long int largest_Pfactor(unsigned long int n)
 {
-	long i, max_factor;
+	unsigned long int i, max_factor;
 
 	for (i = 1; i <= n / 2; i++)
 	{
@@ -47,11 +47,11 @@ long largest_Pfactor(long n)
  */
 int main(void)
 {
-	long n, max_factor;
+	unsigned long int n, max_factor;
 
-	n = 612852475143;
+	n = 1231952;
 	max_factor = largest_Pfactor(n);
-	printf("%ld\n", max_factor);
+	printf("%lu\n", max_factor);
 	return (0);
 }
 
