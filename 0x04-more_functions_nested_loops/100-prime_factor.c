@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	unsigned long int n, max_factor, i;
+	long int n, max_factor, i;
 
 	n = 612852475143;
 	while (n % 2 == 0)
@@ -16,7 +16,7 @@ int main(void)
 		max_factor = 2;
 		n /= 2;
 	}
-	for (i = 3; i < sqrt(n); i++)
+	for (i = 3; i <= sqrt(n); i++)
 	{
 		while (n % i == 0)
 		{
@@ -24,7 +24,7 @@ int main(void)
 			n /= i;
 		}
 	}
-	printf("%lu\n", max_factor);
+	printf("%ld\n", max_factor);
 	return (0);
 }
 
