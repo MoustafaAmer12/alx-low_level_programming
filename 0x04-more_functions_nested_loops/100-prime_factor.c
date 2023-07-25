@@ -49,7 +49,7 @@ int main(void)
 {
 	unsigned long int n, max_factor;
 
-	n = 1231952;
+	n = 612852475143;
 	max_factor = largest_Pfactor(n);
 	printf("%lu\n", max_factor);
 	return (0);
