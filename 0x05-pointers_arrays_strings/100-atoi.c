@@ -10,7 +10,7 @@
 int _atoi(char *s)
 {
 	int pos = 0;
-	int num = 0;
+	unsigned int num = 0;
 	int i = 0;
 
 	while (s[i] != '\0')
@@ -23,7 +23,7 @@ int _atoi(char *s)
 				i++;
 			}
 			if (pos % 2 == 1)
-				num = -num;
+				return (-num);
 			return (num);
 		}
 		else if (s[i] == '-')
