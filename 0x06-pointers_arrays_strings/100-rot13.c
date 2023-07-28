@@ -19,9 +19,10 @@ char *rot13(char *str)
 		j = 0;
 		while (j < 52)
 		{
-			if (test[j] == str[i])
+			if (str[i] == test[j])
 			{
 				str[i] = conv[j];
+				break;
 			}
 			j++;
 		}
