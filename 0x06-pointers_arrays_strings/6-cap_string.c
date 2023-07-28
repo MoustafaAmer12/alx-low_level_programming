@@ -11,8 +11,7 @@ char *cap_string(char *str)
 {
 	int i = 0;
 	int j;
-	char esc[] = {' ', '\n', '\t', ',', ';', '.', '!', '?',\
-		'"', '(', ')', '{', '}'};
+	char esc[] = " \n\t,;.!?\"(){}";
 
 	while (str[i] != '\0')
 	{
