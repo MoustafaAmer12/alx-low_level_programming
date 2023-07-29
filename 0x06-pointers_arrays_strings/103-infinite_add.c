@@ -71,24 +71,17 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 				carry = sum / 10;
 			}
 		}
-		else if (len1 < 0 && len2 < 0 && size_r >= 0)
+		else if (len1 < 0 && len2 < 0)
 		{
-			if (carry == 0)
-			{
-				r[size_r] = 2;
-				break;
-			}
-			else
-			{
-				r[size_r] = carry + '0';
-				carry = 0;
-				break;
-			}
+			r[size_r] = carry + '0';
+			carry = 0;
 		}
 		len1--;
 		len2--;
 		size_r--;
 	}
+	while (size_r >= 0)
+		r[size_r--] = 2;
 	if (size_r < 0 && (len1 >= 0 || len2 >= 0))
 		return (0);
 	else if (size_r < 0 && carry != 0)
