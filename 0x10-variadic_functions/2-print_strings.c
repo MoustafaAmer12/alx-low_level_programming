@@ -25,12 +25,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		while (i > 1)
 		{
 			if (separator)
-				printf("%s%s", (str = va_arg(strings, char*)) ? str : "nil", separator);
+				printf("%s%s", (str = va_arg(strings, char*)) ? str : "(nil)", separator);
 			else
-				printf("%s", (str = va_arg(strings, char*)) ? str : "nil");
+				printf("%s", (str = va_arg(strings, char*)) ? str : "(nil)");
 			i--;
 		}
-		printf("%s\n", (str = va_arg(strings, char*)) ? str : "nil");
+		printf("%s\n", (str = va_arg(strings, char*)) ? str : "(nil)");
 	}
 	va_end(strings);
 }
