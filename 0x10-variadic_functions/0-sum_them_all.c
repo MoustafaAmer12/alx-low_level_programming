@@ -3,6 +3,7 @@
 /**
  * sum_them_all - takes a variable number of int and sums them
  * @n: the number of integers to take as input
+ * @...: the integers to add
  *
  * Return: the sum of the input integers.
  */
