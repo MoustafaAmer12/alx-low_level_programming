@@ -36,7 +36,7 @@ void print_string(char *separator, va_list data)
 {
 	char *str = va_arg(data, char *);
 
-	switch((int)(!str))
+	switch ((int)(!str))
 		case 1:
 			str = "(nil)";
 
