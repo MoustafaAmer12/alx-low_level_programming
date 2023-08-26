@@ -2,8 +2,8 @@
 
 /**
  * add_node - adds a node to the list
- * @head - address of the head node
- * @str - string to be added in the next node
+ * @head: address of the head node
+ * @str: string to be added in the next node
  *
  * Return: address of the list
  */
