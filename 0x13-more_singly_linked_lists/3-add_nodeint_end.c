@@ -5,7 +5,7 @@
  * @head: pointer to the first node in the list
  * @n: element to be added to the list
  *
- * Retunr: pointer to the new node
+ * Return: pointer to the new node
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
