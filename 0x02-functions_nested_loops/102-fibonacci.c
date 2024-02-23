@@ -8,14 +8,14 @@
 int main(void)
 {
 	long int first = 1, second = 2, num;
-
 	int i = 2;
+
 	printf("%ld, %ld, ", first, second);
-	while (i <= 50)
+	while (i < 50)
 	{
 		num = first + second;
 		printf("%ld", num);
-		if ( i != 50)
+		if (i != 49)
 			printf(", ");
 		else
 			printf("\n");
