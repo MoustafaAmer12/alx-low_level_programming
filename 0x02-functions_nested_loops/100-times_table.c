@@ -9,11 +9,13 @@
 void print_number(int n)
 {
 	int rev = 0, end = 0;
-	
+
 	while (n % 10 == 0)
 	{
 		end++;
 		n /= 10;
+		if (n == 0)
+			break;
 	}
 	while (n > 9)
 	{
