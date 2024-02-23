@@ -8,7 +8,7 @@
 int main(void)
 {
 	unsigned long first = 1, second = 2, num;
-	int i = 0;
+	int i = -1;
 
 	printf("%lu, %lu, ", first, second);
 	while (i < 98)
