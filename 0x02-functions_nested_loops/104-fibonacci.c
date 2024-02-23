@@ -11,10 +11,10 @@ int main(void)
 	int i = 2;
 
 	printf("%.0f, %.0f, ", first, second);
-	while (i <= 98)
+	while (i < 98)
 	{
 		num = first + second;
-		if (i != 98)
+		if (i != 97)
 			printf("%.0f, ", num);
 		else
 			printf("%.0f\n", num);
