@@ -2,7 +2,6 @@
 
 /**
  * print_alphabet - prints the alphabet
- * @params: void
  *
  * Return: void
  */
