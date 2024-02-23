@@ -3,12 +3,12 @@
 /**
  * print_number - print a number
  * @n: number to be printed
- * 
+ *
  * Return: void
  */
 void print_number(int n)
 {
-	int rev = 0;
+	int rev = 0, end = n % 10;
 
 	while (n > 9)
 	{
@@ -22,6 +22,8 @@ void print_number(int n)
 		_putchar((rev % 10) + '0');
 		rev /= 10;
 	}
+	if (end == 0)
+		_putchar('0');
 }
 
 /**
@@ -44,7 +46,9 @@ void jack_bauer(void)
 			_putchar(':');
 			if (j < 10)
 				_putchar('0');
-			print_number(j++);
+			print_number(j);
+			_putchar('\n');
+			j++;
 		}
 		i++;
 	}
