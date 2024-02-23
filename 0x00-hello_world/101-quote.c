@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
  * main - Entry point
@@ -7,14 +7,9 @@
  */
 int main(void)
 {
-	char string[58];
-	int i = 0;
+	char *string;
 
-	*string = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-	while (i < 58)
-	{
-		putchar(i++);
-	}
-	putchar('\n');
+	string = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	write(1, string, 59);
 	return (0);
 }
