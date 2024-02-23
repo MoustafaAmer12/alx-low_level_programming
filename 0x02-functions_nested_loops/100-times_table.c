@@ -8,8 +8,13 @@
  */
 void print_number(int n)
 {
-	int rev = 0, end = n % 10;
-
+	int rev = 0, end = 0;
+	
+	while (n % 10 == 0)
+	{
+		end++;
+		n /= 10;
+	}
 	while (n > 9)
 	{
 		rev += (n % 10);
@@ -22,7 +27,7 @@ void print_number(int n)
 		_putchar((rev % 10) + '0');
 		rev /= 10;
 	}
-	if (end == 0)
+	while (end-- > 0)
 		_putchar('0');
 }
 
@@ -38,7 +43,6 @@ void print_times_table(int n)
 
 	if (n > 15 || n < 0)
 	{
-		_putchar('\n');
 		return;
 	}
 	while (i <= n)
