@@ -8,7 +8,7 @@
 int main(void)
 {
 	double first = 1, second = 2, num;
-	int i = 2;
+	int i = 3;
 
 	printf("%.0f, %.0f, ", first, second);
 	while (i < 98)
