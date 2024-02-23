@@ -28,7 +28,8 @@ int num_length(int num)
  */
 int main(void)
 {
-	unsigned long first = 1, second = 2, num, mx = 100000000, fo = 0, so = 0, sumo = 0;
+	unsigned long first = 1, second = 2, num, mx = 100000000;
+	unsigned long fo = 0, so = 0, sumo = 0;
 	int i, initials;
 
 	for (i = 1; i <= 98; i++)
