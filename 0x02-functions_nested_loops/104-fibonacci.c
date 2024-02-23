@@ -48,7 +48,7 @@ int main(void)
 		fo = so;
 		second = num;
 		so = sumo;
-		if (count != 98)
+		if (i != 98)
 			printf(", ");
 		else
 			printf("\n");
