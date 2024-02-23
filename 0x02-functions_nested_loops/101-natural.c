@@ -18,5 +18,6 @@ int main(void)
 			sum += (i * 5);
 		i++;
 	}
+	printf("%d\n", sum);
 	return (0);
 }
