@@ -7,17 +7,17 @@
  */
 int main(void)
 {
-	double first = 1, second = 2, num;
+	unsigned long first = 1, second = 2, num;
 	int i = 2;
 
-	printf("%.0f, %.0f, ", first, second);
+	printf("%lu, %lu, ", first, second);
 	while (i < 98)
 	{
 		num = first + second;
 		if (i != 97)
-			printf("%.0f, ", num);
+			printf("%lu, ", num);
 		else
-			printf("%.0f\n", num);
+			printf("%lu\n", num);
 		first = second;
 		second = num;
 		i++;
