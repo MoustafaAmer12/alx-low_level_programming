@@ -12,7 +12,7 @@ void print_number(int n)
 
 	if (n == 0)
 	{
-		_putchar('0');
+		_putchar(48);
 		return;
 	}
 	if (n < 0)
@@ -35,12 +35,12 @@ void print_number(int n)
 		_putchar('-');
 	while (rev > 0)
 	{
-		_putchar(rev % 10 + '0');
+		_putchar(rev % 10 + 48);
 		rev /= 10;
 	}
 	while (end > 0)
 	{
-		_putchar('0');
+		_putchar(48);
 		end--;
 	}
 }
