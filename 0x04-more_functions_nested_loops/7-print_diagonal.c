@@ -2,7 +2,7 @@
 
 /**
  * print_diagonal - prints a diagonal of length n
- * n: length of the diagonal to be printed
+ * @n: length of the diagonal to be printed
  *
  * Return: void
  */
