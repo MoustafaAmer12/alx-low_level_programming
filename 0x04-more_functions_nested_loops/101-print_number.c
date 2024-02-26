@@ -8,7 +8,8 @@
  */
 void print_number(int n)
 {
-	int end = 0, rev = 0, sign = 1;
+	int end = 0,  sign = 1;
+	unsigned int num, rev = 0;
 
 	if (n == 0)
 	{
@@ -20,16 +21,17 @@ void print_number(int n)
 		sign = -1;
 		n *= -1;
 	}
-	while (n % 10 == 0)
+	num = n;
+	while (num % 10 == 0)
 	{
 		end++;
-		n /= 10;
+		num /= 10;
 	}
-	while (n > 0)
+	while (num > 0)
 	{
 		rev *= 10;
-		rev += n % 10;
-		n /= 10;
+		rev += num % 10;
+		num /= 10;
 	}
 	if (sign == -1)
 		_putchar('-');
