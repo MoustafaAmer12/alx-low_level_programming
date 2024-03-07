@@ -42,7 +42,7 @@ void rev_string(char *s)
 {
 	int size = _strlen(s) - 1, j = 0;
 
-	while (size != j)
+	while (size > j)
 	{
 		swap(&s[j++], &s[size--]);
 	}
