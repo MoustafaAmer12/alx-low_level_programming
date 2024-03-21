@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * get_dnodint_at_index - returns a node at a given index
+ * get_dnodeint_at_index - returns a node at a given index
  * @head: pointer to the head of the list
  * @index: index of the required node
  *
