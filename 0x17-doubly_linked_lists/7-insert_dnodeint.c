@@ -22,23 +22,23 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	else
 	{
 		new->n = n;
-		while (idx > 1 && current)
+		while (idx > 0 && current)
 		{
 			current = current->next;
 			idx--;
 		}
-		if (current == NULL && idx == 1)
+		if (current == NULL && idx == 0)
 		{
 			new = add_dnodeint_end(h, n);
 		}
 		else if (current != NULL)
 		{
-			current->next->prev = new;
-			new->next = current->next;
-			current->next = new;
-			new->prev = current;
+			new->next = current;
+			new->prev = current->prev;
+			current->prev->next = new;
+			current->prev = new;
 		}
-		else if(current == NULL && idx > 1)
+		else if (current == NULL && idx > 0)
 		{
 			return (NULL);
 		}
