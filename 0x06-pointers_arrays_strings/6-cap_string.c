@@ -8,14 +8,14 @@
  */
 char *cap_string(char *s)
 {
-	char *sep = " \t\n,;.!?\"(){}";
+	char *sep = " \n\t,;.!?\"(){}";
 	int i = 0, j, cap = 0;
 
 	while (s[i] != '\0')
 	{
 		if (!cap)
 		{
-			for (j = 0; j < (int)sizeof(sep); j++)
+			for (j = 0; j < 13; j++)
 			{
 				if (s[i] == sep[j])
 				{
@@ -29,6 +29,14 @@ char *cap_string(char *s)
 			if (s[i] <= 'z' && s[i] >= 'a')
 			{
 				s[i] = s[i] - 'a' + 'A';
+			}
+			else
+			{
+				for (j = 0; j < 13; j++)
+				{
+					if (s[i] == sep[j])
+						cap = 1;
+				}
 			}
 		}
 		i++;
