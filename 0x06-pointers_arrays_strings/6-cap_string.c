@@ -8,16 +8,16 @@
  */
 char *cap_string(char *s)
 {
-	char *sep = " \n\t,;.!?\"(){}";
-	int i = 0, j, cap = 0;
-
-	while (s[i] != '\0')
+	char *sep = " \n\t,;.!?\"(){}", *ptr = s;
+	int j, cap = 1;
+	
+	while (*s)
 	{
 		if (!cap)
 		{
 			for (j = 0; j < 13; j++)
 			{
-				if (s[i] == sep[j])
+				if (*s == sep[j])
 				{
 					cap = 1;
 					break;
@@ -27,15 +27,15 @@ char *cap_string(char *s)
 		else
 		{
 			cap = 0;
-			if (s[i] <= 'z' && s[i] >= 'a')
+			if (*s <= 'z' && *s >= 'a')
 			{
-				s[i] = s[i] - 'a' + 'A';
+				*s = *s - 'a' + 'A';
 			}
 			else
 			{
 				for (j = 0; j < 13; j++)
 				{
-					if (s[i] == sep[j])
+					if (*s == sep[j])
 					{
 						cap = 1;
 						break;
@@ -43,7 +43,7 @@ char *cap_string(char *s)
 				}
 			}
 		}
-		i++;
+		s++;
 	}
-	return (s);
+	return (ptr);
 }
