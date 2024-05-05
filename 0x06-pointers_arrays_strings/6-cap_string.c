@@ -20,6 +20,7 @@ char *cap_string(char *s)
 				if (s[i] == sep[j])
 				{
 					cap = 1;
+					break;
 				}
 			}
 		}
@@ -35,7 +36,10 @@ char *cap_string(char *s)
 				for (j = 0; j < 13; j++)
 				{
 					if (s[i] == sep[j])
+					{
 						cap = 1;
+						break;
+					}
 				}
 			}
 		}
