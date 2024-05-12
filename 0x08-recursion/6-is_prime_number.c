@@ -15,7 +15,7 @@ int rec_prime(int n, int factor)
 		return (1);
 	if (n % factor == 0)
 		return (0);
-	return rec_prime(n, factor + 1);
+	return (rec_prime(n, factor + 1));
 }
 
 /**
