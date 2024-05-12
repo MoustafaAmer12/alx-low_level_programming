@@ -8,15 +8,9 @@
  */
 int str_len(char *s)
 {
-	int len = 0;
-	char *ptr = s;
-
-	while (*ptr)
-	{
-		len++;
-		ptr++;
-	}
-	return (len);
+	if (!*s)
+		return (0);
+	return (1 + str_len(++s));
 }
 
 /**
